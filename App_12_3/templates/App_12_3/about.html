@@ -1,0 +1,167 @@
+{% extends 'App_12_3/base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <h2 class="section-title">About Me</h2>
+    <img src="{% static 'images/udaya.png' %}" alt="Udaya Sindhu" class="profile-pic">
+
+    <div class="intro">
+        <p class="bio">Hi! I'm Udaya Sindhu, a BTech student with a passion for technology, web development, and constant learning. My goal is to innovate and make a positive impact through my work.</p>
+    </div>
+
+    <div class="details">
+        <h3 class="section-subtitle">Personal Information</h3>
+        <ul class="info-list">
+            <li><strong>Name:</strong> T.Udaya Sindhu</li>
+            <li><strong>Father's Name:</strong> T.S.Venu</li>
+            <li><strong>Mother's Name:</strong> T.Veena</li>
+            <li><strong>Email:</strong> 2310080012@klh.edu.in</li>
+            <li><strong>Date of Birth:</strong> 23 January, 2005</li>
+            <li><strong>Place of Birth:</strong> Hyderabad</li>
+            <li><strong>Nationality:</strong> Indian</li>
+            <li><strong>Languages Known:</strong> English, Telugu, Hindi</li>
+        </ul>
+
+        <h3 class="section-subtitle">Education</h3>
+        <ul class="education-list">
+            <li>Schooling - Slate- The School</li>
+            <li>Intermediate - VMJC</li>
+            <li>BTech - Currently pursuing BTech in the Department of Artificial Intelligence and Data Science at KLH University.</li>
+        </ul>
+
+        <h3 class="section-subtitle">Skills</h3>
+        <ul class="skills-list">
+            <li>Python, Django</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>SQL, Database Management</li>
+            <li>Git/GitHub - Version Control</li>
+            <li>Basic Data Structures and Algorithms</li>
+            <li>Problem-Solving (LeetCode, HackerRank)</li>
+            <li>Basic Machine Learning (Pandas, NumPy)</li>
+            <li>Object-Oriented Programming (OOP)</li>
+        </ul>
+
+        <h3 class="section-subtitle">Certifications</h3>
+        <ul class="certifications-list">
+            <li>AWS Cloud</li>
+            <li>Alteryx</li>
+        </ul>
+
+        <h3 class="section-subtitle">Projects</h3>
+        <ul class="projects-list">
+            <li>Health Prediction System - Medipredict</li>
+            <li>Mini Library Project</li>
+        </ul>
+
+        <h3 class="section-subtitle">Hobbies</h3>
+        <p class="hobbies-list">In my free time, I love exploring nature, reading tech blogs, playing badminton, cooking, and diving into photography and design. I enjoy mixing creativity with technology!</p>
+
+        <h3 class="section-subtitle">Areas of Interest</h3>
+        <div class="areas-of-interest">
+            <ul>
+                <li>Artificial Intelligence and Machine Learning</li>
+                <li>Data Science and Big Data Analytics</li>
+                <li>Web Development (Full Stack)</li>
+                <li>Cybersecurity and Ethical Hacking</li>
+                <li>Cloud Computing (AWS, Google Cloud)</li>
+                <li>Blockchain Technology</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .about-section {
+        background-color: #f8f9fc;
+        color: #333;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #ff7f7f;
+        margin-bottom: 30px;
+    }
+
+    .bio {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: center;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .profile-pic {
+        display: block;
+        margin: 20px auto;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 5px solid #ff7f7f;
+    }
+
+    .details {
+        margin-top: 40px;
+    }
+
+    .section-subtitle {
+        font-size: 1.6rem;
+        color: #ff7f7f;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #ff7f7f;
+    }
+
+    .info-list, .skills-list, .projects-list, .certifications-list {
+        list-style: none;
+        padding: 0;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .info-list li, .skills-list li, .projects-list li, .certifications-list li {
+        margin-bottom: 8px;
+    }
+
+    .skills-list li::before {
+        content: "🌸";
+        margin-right: 10px;
+    }
+
+    .areas-of-interest {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .areas-of-interest li {
+        background-color: #f0f0f0;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-weight: 600;
+        color: #333;
+        flex: 1 1 30%;
+        margin: 5px;
+    }
+
+    .hobbies-list {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 30px;
+    }
+</style>
+{% endblock %}

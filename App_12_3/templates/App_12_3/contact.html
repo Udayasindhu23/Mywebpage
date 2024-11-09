@@ -1,0 +1,24 @@
+{% extends 'App_12_3/base.html' %}
+{% load static %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>Feel free to reach out to me for collaborations or any inquiries.</p>
+    
+    {% if messages %}
+        {% for message in messages %}
+            <p class="message">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Send Message</button>
+    </form>
+    <p>Or connect with me on <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | <a href="https://github.com/your-username" target="_blank">GitHub</a></p>
+</section>
+{% endblock %}
